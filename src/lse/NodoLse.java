@@ -1,21 +1,21 @@
 package lse;
 
-public class Nodo {
-    private Nodo anterior;
+public class NodoLse {
+    private NodoLse anterior;
     private Object dato;
-    private Nodo siguiente;
+    private NodoLse siguiente;
 
-    public Nodo(Nodo anterior, Object dato, Nodo siguiente) {
+    public NodoLse(NodoLse anterior, Object dato, NodoLse siguiente) {
         this.setAnterior(anterior);
         this.setDato(dato);
         this.setSiguiente(siguiente);
     }
 
-    public Nodo getAnterior() {
+    public NodoLse getAnterior() {
         return anterior;
     }
 
-    public void setAnterior(Nodo anterior) {
+    public void setAnterior(NodoLse anterior) {
         this.anterior = anterior;
     }
 
@@ -27,11 +27,11 @@ public class Nodo {
         this.dato = dato;
     }
 
-    public Nodo getSiguiente() {
+    public NodoLse getSiguiente() {
         return siguiente;
     }
 
-    public void setSiguiente(Nodo siguiente) {
+    public void setSiguiente(NodoLse siguiente) {
         this.siguiente = siguiente;
     }
 }

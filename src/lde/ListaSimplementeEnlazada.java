@@ -1,7 +1,7 @@
-package lse;
+package lde;
 
 public class ListaSimplementeEnlazada {
-    Nodo primero;
+    NodoLde primero;
     public ListaSimplementeEnlazada(){
         primero = null;
     }
@@ -12,10 +12,10 @@ public class ListaSimplementeEnlazada {
 
     public void insertar(Object dato){
         if(estaVacia()){
-            Nodo nuevo = new Nodo(dato,  null);
+            NodoLde nuevo = new NodoLde(dato,  null);
             primero = nuevo;
         }else {
-            Nodo nuevo = new Nodo(dato, primero);
+            NodoLde nuevo = new NodoLde(dato, primero);
             primero = nuevo;
         }
     }
@@ -27,7 +27,7 @@ public class ListaSimplementeEnlazada {
     }
 
     public void mostrar(){
-        Nodo tmp = primero;
+        NodoLde tmp = primero;
         while (tmp != null){
             System.out.println(tmp.getDato() + "    ");
 

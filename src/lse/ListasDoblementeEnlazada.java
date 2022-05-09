@@ -1,7 +1,7 @@
 package lse;
 
 public class ListasDoblementeEnlazada {
-    Nodo inicio;
+    NodoLse inicio;
 
     public ListasDoblementeEnlazada(){
         inicio = null;
@@ -13,10 +13,10 @@ public class ListasDoblementeEnlazada {
 
     public void insertar(Object dato){
         if (estaVacia()){
-            Nodo nuevo = new Nodo(null, dato, null);
+            NodoLse nuevo = new NodoLse(null, dato, null);
             inicio = nuevo;
         }else {
-            Nodo nuevo = new Nodo(null, dato, inicio);
+            NodoLse nuevo = new NodoLse(null, dato, inicio);
             inicio.setAnterior(nuevo);
             inicio = nuevo;
         }
@@ -35,7 +35,7 @@ public class ListasDoblementeEnlazada {
 
     public void mostrarAdelante(){
         if (!estaVacia()){
-            Nodo temp = inicio;
+            NodoLse temp = inicio;
             while (temp != null){
                 System.out.println(temp.getDato() +"     ");
 
@@ -47,12 +47,12 @@ public class ListasDoblementeEnlazada {
 
     public void mostrarAtras(){
         if (!estaVacia()){
-            Nodo ultimo = inicio;
+            NodoLse ultimo = inicio;
             while (ultimo.getSiguiente() != null){
                 ultimo = ultimo.getSiguiente();
             }
 
-            Nodo temp = ultimo;
+            NodoLse temp = ultimo;
             while (temp != null){
                 System.out.println(temp.getDato() + "       ");
 

@@ -1,6 +1,7 @@
+import lcde.ListaCircularDoblementeEnlazada;
 import lcse.ListaCircularSimplementeEnlazada;
 import lse.ListasDoblementeEnlazada;
-import lse.ListaSimplementeEnlazada;
+import lde.ListaSimplementeEnlazada;
 public class Main {
     public static void main(String[] args) {
 
@@ -49,17 +50,16 @@ public class Main {
 
         
 
-        ListaCircularSimplementeEnlazada listaCircularSimplementeEnlazada = new ListaCircularSimplementeEnlazada();
-        System.out.println(listaCircularSimplementeEnlazada.estaVacia());
-        System.out.println(listaCircularSimplementeEnlazada.tamaño());
+     //   ListaCircularSimplementeEnlazada listaCircularSimplementeEnlazada = new ListaCircularSimplementeEnlazada();
+     //   System.out.println(listaCircularSimplementeEnlazada.estaVacia());
+     //   System.out.println(listaCircularSimplementeEnlazada.tamaño());
 
-        for (int i = 1; i <= 12; i++) {
-            listaCircularSimplementeEnlazada.insertarFin(i);
+      //  for (int i = 1; i <= 12; i++) {
+       //
+      //  }
 
-        }
-
-        listaCircularSimplementeEnlazada.mostrar();
-        System.out.println(listaCircularSimplementeEnlazada.tamaño());
+       // listaCircularSimplementeEnlazada.mostrar();
+      //  System.out.println(listaCircularSimplementeEnlazada.tamaño());
 
        // listaCircularSimplementeEnlazada.eliminarFin();
        // listaCircularSimplementeEnlazada.eliminarFin();
@@ -67,7 +67,26 @@ public class Main {
        // listaCircularSimplementeEnlazada.mostrar();
 
 
-        listaCircularSimplementeEnlazada.mostrarCircular(2);
+       // listaCircularSimplementeEnlazada.mostrarCircular(2);
+
+
+
+        ListaCircularDoblementeEnlazada listaCircularDoblementeEnlazada = new ListaCircularDoblementeEnlazada();
+
+        System.out.println(listaCircularDoblementeEnlazada.estaVacia());
+      for (int i = 1; i <= 5; i++){
+            listaCircularDoblementeEnlazada.insertarFinal(i);
+        }
+      listaCircularDoblementeEnlazada.mostrar();
+
+       listaCircularDoblementeEnlazada.eliminarFinal();
+        listaCircularDoblementeEnlazada.eliminarFinal();
+        listaCircularDoblementeEnlazada.mostrar();
+
+
+        listaCircularDoblementeEnlazada.mostrarAdelante(8);
+        listaCircularDoblementeEnlazada.mostrarAtras(8);
+
 
     }
 }

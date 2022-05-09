@@ -1,10 +1,11 @@
-package lse;
+package lde;
 
-public class Nodo {
+
+public class NodoLde {
     private Object dato;
-    private Nodo siguiente;
+    private NodoLde siguiente;
 
-    public Nodo(Object dato, Nodo siguiente) {
+    public NodoLde(Object dato, NodoLde siguiente) {
         this.setDato(dato);
         this.setSiguiente(siguiente);
     }
@@ -18,11 +19,11 @@ public class Nodo {
         this.dato = dato;
     }
 
-    public Nodo getSiguiente() {
+    public NodoLde getSiguiente() {
         return siguiente;
     }
 
-    public void setSiguiente(Nodo siguiente) {
+    public void setSiguiente(NodoLde siguiente) {
         this.siguiente = siguiente;
     }
 }
