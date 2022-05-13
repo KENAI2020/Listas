@@ -10,6 +10,7 @@ public class Main {
 
         //insertar elementos a nuestra lista
        // listaSimplementeEnlazada.insertar(5);
+       // listaSimplementeEnlazada.insertar(4);
        // listaSimplementeEnlazada.insertar(3);
        //listaSimplementeEnlazada.insertar(2);
         //listaSimplementeEnlazada.insertar(1);
@@ -55,7 +56,7 @@ public class Main {
      //   System.out.println(listaCircularSimplementeEnlazada.tamaño());
 
       //  for (int i = 1; i <= 12; i++) {
-       //
+       // listaCircularSimplementeEnlazada.insertarFin(i);
       //  }
 
        // listaCircularSimplementeEnlazada.mostrar();
